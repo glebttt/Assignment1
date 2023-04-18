@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StringManipulationTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-04-18T16:33:58" hostname="DESKTOP-J6KQII0" time="0.011">
+  <properties/>
+  <testcase name="testOneStart()" classname="StringManipulationTest" time="0.002"/>
+  <testcase name="testOdd()" classname="StringManipulationTest" time="0.001"/>
+  <testcase name="testMoreThanOneTextLength()" classname="StringManipulationTest" time="0.001"/>
+  <testcase name="testEmpty()" classname="StringManipulationTest" time="0.001"/>
+  <testcase name="testEven()" classname="StringManipulationTest" time="0.001"/>
+  <testcase name="testOneTextLength()" classname="StringManipulationTest" time="0.001"/>
+  <testcase name="testStartTextLength()" classname="StringManipulationTest" time="0.0"/>
+  <testcase name="testStartBetweenOneAndTextLength()" classname="StringManipulationTest" time="0.0"/>
+  <testcase name="testZeroStart()" classname="StringManipulationTest" time="0.001"/>
+  <testcase name="testStartTextLengthMinusOne()" classname="StringManipulationTest" time="0.001"/>
+  <testcase name="testZeroTextLength()" classname="StringManipulationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MathTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-18T16:33:58" hostname="DESKTOP-J6KQII0" time="0.004">
+  <properties/>
+  <testcase name="testALessThanBAndBothPositive()" classname="MathTest" time="0.0"/>
+  <testcase name="testSmallerThan()" classname="MathTest" time="0.0"/>
+  <testcase name="testBothEqualAndZero()" classname="MathTest" time="0.0"/>
+  <testcase name="testGreaterThan()" classname="MathTest" time="0.0"/>
+  <testcase name="testAGreaterThanBAndBothNegative()" classname="MathTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

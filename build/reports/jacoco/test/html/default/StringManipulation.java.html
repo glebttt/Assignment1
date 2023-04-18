@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StringManipulation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ken1520-assignment-1-glebttt-master</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">StringManipulation.java</span></div><h1>StringManipulation.java</h1><pre class="source lang-java linenums"><span class="nc" id="L1">class StringManipulation {</span>
+
+  /**
+   * Reverses the end of a string.
+   *
+   *                          012345                     012345
+   * For example: reverseEnd(&quot;Hello, world&quot;, 5) returns &quot;Hellodlrow ,&quot;
+   *                               &lt;-----&gt;                    &lt;-----&gt;
+   *
+   * With start == 0, reverses the entire text.
+   * With start == text.length(), reverses nothing.
+   *
+   * @param text    non-null String that will have its end reversed
+   * @param start   the index at which the remainder of the input is reversed,
+   *                requires 0 &lt;= start &lt;= text.length()
+   * @return input text with the substring from start to the end of the string reversed
+   */
+  public static String reverseEnd(String text, int start) {
+<span class="fc bfc" id="L19" title="All 4 branches covered.">    if (text.length() == 0 || text.length() &lt; start){</span>
+<span class="fc" id="L20">      return text;</span>
+    }
+<span class="fc" id="L22">    char [] charText = text.toCharArray();</span>
+<span class="fc" id="L23">    char [] manipulateCharText = new char[charText.length-start];</span>
+
+<span class="fc bfc" id="L25" title="All 2 branches covered.">    for (int i = 0; i&lt;manipulateCharText.length; i++) {</span>
+<span class="fc" id="L26">      manipulateCharText[i] = charText[i+start];</span>
+    }
+
+<span class="fc" id="L29">    int k = 1;</span>
+<span class="fc" id="L30">    int length = manipulateCharText.length;</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">    for (int i = 0; i&lt;length/2; i++) {</span>
+<span class="fc" id="L32">      char temp = manipulateCharText[i];</span>
+<span class="fc" id="L33">      manipulateCharText[i] = manipulateCharText[length-k];</span>
+<span class="fc" id="L34">      manipulateCharText[length-k] = temp;;</span>
+<span class="fc" id="L35">      k++;</span>
+    }
+
+<span class="fc bfc" id="L38" title="All 2 branches covered.">    for (int i = 0; i&lt;manipulateCharText.length; i++) {</span>
+<span class="fc" id="L39">      charText[i+start] = manipulateCharText[i];</span>
+    }
+
+<span class="fc" id="L42">    text = new String(charText);</span>
+<span class="fc" id="L43">    return text;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
